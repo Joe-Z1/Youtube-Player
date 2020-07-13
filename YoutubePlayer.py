@@ -27,6 +27,10 @@ class YoutubeBot():
         Skipad = self.driver.find_element_by_xpath(
             "/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[4]/div/div[3]/div/div[2]/span/button/div").click()
 
+    def Current(self):
+        current = self.driver.find_element_by_xpath(
+            "//*[@id='container']/h1/yt-formatted-string")
+
 
 bot = YoutubeBot()
 bot.OpenPage()
